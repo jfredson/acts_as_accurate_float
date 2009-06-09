@@ -1,7 +1,23 @@
 ActsAsAccurateFloat
 ===================
 
-Introduction goes here.
+This plugin enables you to avoid rounding errors in your SQL select statements when selecting with
+conditions on a float column.
+
+For example, if you have a row with column_a equal to 3.8, find_by_column_a(3.8) will return 0 results.
+This plugin will fix that.
+
+acts_as_accurate_float works by overriding the default find statement to round off the stored
+float values before comparing them to your input values so that slight rounding errors don't
+mess up your results.
+
+find_by_column_a(3.8) will now produce the following SQL:
+
+SELECT * FROM `table_name` WHERE (round(column_a*100)/100 = 3.8) LIMIT 1;
+
+It should work with all various find statements that include a condition on your
+acts_as_accurate_float field.
+
 
 Usage
 ===================
@@ -10,5 +26,11 @@ Usage
 # accuracy is specified in number of decimal places
 
 acts_as_accurate_float :column_a, 2
+
+
+Compatibility
+===================
+I have only verified these float issues with MySQL, and also have only tested this plugin for use
+with MySQL. If someone wants to take a crack at other databases, please let me know.
 
 Copyright (c) 2009 John Fredrickson, released under the MIT license
