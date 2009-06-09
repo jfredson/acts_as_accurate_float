@@ -1,0 +1,14 @@
+ActsAsAccurateFloat
+===================
+
+Introduction goes here.
+
+Usage
+===================
+
+# specify a float column and level of accuracy you need
+# accuracy is specified in number of decimal places
+
+acts_as_accurate_float :column_a, 2
+
+Copyright (c) 2009 John Fredrickson, released under the MIT license
