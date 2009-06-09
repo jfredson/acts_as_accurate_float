@@ -18,6 +18,8 @@ SELECT * FROM `table_name` WHERE (round(column_a*100)/100 = 3.8) LIMIT 1;
 It should work with all various find statements that include a condition on your
 acts_as_accurate_float field.
 
+testing...
+
 
 Usage
 ===================
