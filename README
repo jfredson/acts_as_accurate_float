@@ -44,4 +44,5 @@ Issues
 ==================
 There is currently an issue with named_scopes that I will try to resolve as soon as I get a chance. For now be warned that this plugin may break your current named_scopes.
 
+
 Copyright (c) 2009 John Fredrickson, released under the MIT license
