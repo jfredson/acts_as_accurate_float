@@ -42,6 +42,6 @@ with MySQL. If someone wants to take a crack at other databases, please let me k
 
 Issues
 ==================
-There is currently in issue with named_scopes that I will try to resolve as soon as I get a chance. For now be warned that this plugin may break your current named_scopes.
+There is currently an issue with named_scopes that I will try to resolve as soon as I get a chance. For now be warned that this plugin may break your current named_scopes.
 
 Copyright (c) 2009 John Fredrickson, released under the MIT license
